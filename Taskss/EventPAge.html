@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #ccc;
+        }
+        header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+      header span {
+        color: red;
+      }
+        h1 {
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 35px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            box-shadow: -8px -10px 30px rgba(225, 225, 225, 0.1),
+          0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .event-details {
+            margin-bottom: 20px;
+        }
+
+        .registration-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            padding-left: 45%;
+
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-left: 45%;
+            
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 50%;
+            transition: all 0.45s;
+            font-size: large;
+        }
+        button:hover{
+            background: #000;
+        }
+        h2{
+            color: #fff;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Moh<span>a</span>mmed Mustaq<span>ee</span>m</h1>
+        <p>Front-End Developer | Web Developer</p>
+      </header>
+   
+    
+    <section>
+        <h1>Event Name</h1>
+        <h2>Event Details</h2>
+        <div class="event-details">
+            <p><strong>Date:</strong> January 25, 2024</p>
+            <p><strong>Location:</strong> Event Venue, Bangalore</p>
+            <p><strong>Agenda:</strong> Emerging Technologies In development</p>
+        </div>
+
+        <h2 style="text-align: center;">Registration Form</h2>
+        <form class="registration-form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div> <br>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div><br>
+
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div> <br>
+
+            <div>
+                <label for="attendee-type">Attendee Type:</label>
+                <select id="attendee-type" name="attendee-type" required>
+                    <option value="participant">Participant</option>
+                    <option value="speaker">Speaker</option>
+                    <option value="sponsor">Sponsor</option>
+                    <option value="student">Student</option>
+                </select>
+            </div>
+            <br>
+
+            <button type="submit" >Register</button>
+        </form>
+    </section>
+</body>
+</html>

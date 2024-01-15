@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog Homepage</title>
+    <style>
+        /* Your CSS styles remain unchanged */
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #333;
+        }
+        header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+      header span {
+        color: red;
+      }
+        h1 {
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 35px;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            color: #ccc;
+            box-shadow: -8px -10px 30px rgba(225, 225, 225, 0.1),
+          0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #fff;
+        }
+
+        .featured-articles {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .featured-articles img{
+            width: 100%;
+        }
+
+        .featured-article {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .featured-article:hover {
+            transform: scale(1.05);
+        }
+
+        .recent-posts {
+            margin-top: 20px;
+        }
+
+        .post {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: all 0.45s;
+        }
+
+        .bio {
+            margin-top: 20px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        p{
+            letter-spacing: 1px;
+        }
+        a{
+            text-decoration: none;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Moh<span>a</span>mmed Mustaq<span>ee</span>m</h1>
+        <p>Front-End Developer | Web Developer</p>
+      </header>
+    
+    <section>
+        <h1>Personal Blog</h1>
+        <h2>Featured Articles</h2>
+        <div class="featured-articles">
+            <!-- Featured Article 1 -->
+            <a href="https://programmingsoup.com/history-of-javascript-frameworks" target="_blank">
+                <div class="featured-article">
+                    <img src="./jsframework.png" alt="Featured Article 1">
+                    <h3>The Evolution of JavaScript Frameworks</h3>
+                    <p>Explore the history and advancements of JavaScript frameworks, from Angular to React and Vue.</p>
+                </div>
+            </a>
+
+     
+            <a href="https://www.codewithrandom.com/2023/11/19/portfolio-website-html-and-css/#google_vignette" target="_blank">
+
+                <div class="featured-article">
+                    <img src="./resposivewebdesign.jpg" alt="Featured Article 2">
+                    <h3>Responsive Web Design Best Practices</h3>
+                    <p>Learn the essential practices for creating responsive and user-friendly web designs.</p>
+                </div>
+            </a>
+
+           
+        </div>
+
+        <div class="recent-posts">
+            <h2>Recent Posts</h2>
+            <!-- Recent Post 1 -->
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout" target="_blank">
+
+                <div class="post">
+                    <h3>The Power of CSS Grid Layout</h3>
+                    <p>Discover the capabilities and benefits of using CSS Grid for layout design in modern web development.</p>
+                </div>
+            </a>
+
+            <!-- Recent Post 2 -->
+            <a href="./BlogPost.html" target="_blank">
+
+                <div class="post">
+                    <h3>Exploring the Latest Frontend Technologies</h3>
+                    <p>Stay updated on the newest trends and technologies shaping the world of frontend development.</p>
+                </div>
+            </a>
+
+            <!-- Add more recent posts as needed -->
+        </div>
+
+        <div class="bio">
+            <h2>About the Author</h2>
+            <p>Mohammed Mustaqeem</p>
+            <p>A passionate frontend developer sharing insights and experiences in the ever-evolving world of web development.</p>
+        </div>
+    </section>
+</body>
+</html>
